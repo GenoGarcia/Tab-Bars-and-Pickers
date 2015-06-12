@@ -14,6 +14,24 @@
 		EFA127081B28953C000C2B8F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFA127071B28953C000C2B8F /* Images.xcassets */; };
 		EFA1270B1B28953C000C2B8F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFA127091B28953C000C2B8F /* LaunchScreen.xib */; };
 		EFA127171B28953D000C2B8F /* Tab_Bars_and_PickersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA127161B28953D000C2B8F /* Tab_Bars_and_PickersTests.m */; };
+		EFA127221B289670000C2B8F /* UIViewController+DatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA127211B289670000C2B8F /* UIViewController+DatePickerViewController.m */; };
+		EFA127251B2896A4000C2B8F /* UIViewController+SingleComponentPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA127241B2896A4000C2B8F /* UIViewController+SingleComponentPickerViewController.m */; };
+		EFA127281B2896DA000C2B8F /* UIViewController+DoubleComponentPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA127271B2896DA000C2B8F /* UIViewController+DoubleComponentPickerViewController.m */; };
+		EFA1272B1B2896FF000C2B8F /* UIViewController+DependentComponentPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA1272A1B2896FF000C2B8F /* UIViewController+DependentComponentPickerViewController.m */; };
+		EFA127321B2899CE000C2B8F /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA1272C1B2899CE000C2B8F /* apple.png */; };
+		EFA127331B2899CE000C2B8F /* doubleicon.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA1272D1B2899CE000C2B8F /* doubleicon.png */; };
+		EFA127341B2899CE000C2B8F /* dependenticon.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA1272E1B2899CE000C2B8F /* dependenticon.png */; };
+		EFA127351B2899CE000C2B8F /* toolicon.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA1272F1B2899CE000C2B8F /* toolicon.png */; };
+		EFA127361B2899CE000C2B8F /* singleicon.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA127301B2899CE000C2B8F /* singleicon.png */; };
+		EFA127371B2899CE000C2B8F /* clockicon.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA127311B2899CE000C2B8F /* clockicon.png */; };
+		EFA1273D1B2899DA000C2B8F /* lemon.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA127381B2899DA000C2B8F /* lemon.png */; };
+		EFA1273E1B2899DA000C2B8F /* cherry.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA127391B2899DA000C2B8F /* cherry.png */; };
+		EFA1273F1B2899DA000C2B8F /* bar.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA1273A1B2899DA000C2B8F /* bar.png */; };
+		EFA127401B2899DA000C2B8F /* crown.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA1273B1B2899DA000C2B8F /* crown.png */; };
+		EFA127411B2899DA000C2B8F /* seven.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA1273C1B2899DA000C2B8F /* seven.png */; };
+		EFA127441B2899E2000C2B8F /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = EFA127421B2899E2000C2B8F /* win.wav */; };
+		EFA127451B2899E2000C2B8F /* crunch.wav in Resources */ = {isa = PBXBuildFile; fileRef = EFA127431B2899E2000C2B8F /* crunch.wav */; };
+		EFA127481B28A703000C2B8F /* UIViewController+CustomPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA127471B28A703000C2B8F /* UIViewController+CustomPickerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +58,29 @@
 		EFA127101B28953D000C2B8F /* Tab Bars and PickersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tab Bars and PickersTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFA127151B28953D000C2B8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFA127161B28953D000C2B8F /* Tab_Bars_and_PickersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tab_Bars_and_PickersTests.m; sourceTree = "<group>"; };
+		EFA127201B289670000C2B8F /* UIViewController+DatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DatePickerViewController.h"; sourceTree = "<group>"; };
+		EFA127211B289670000C2B8F /* UIViewController+DatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DatePickerViewController.m"; sourceTree = "<group>"; };
+		EFA127231B2896A4000C2B8F /* UIViewController+SingleComponentPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SingleComponentPickerViewController.h"; sourceTree = "<group>"; };
+		EFA127241B2896A4000C2B8F /* UIViewController+SingleComponentPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SingleComponentPickerViewController.m"; sourceTree = "<group>"; };
+		EFA127261B2896DA000C2B8F /* UIViewController+DoubleComponentPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DoubleComponentPickerViewController.h"; sourceTree = "<group>"; };
+		EFA127271B2896DA000C2B8F /* UIViewController+DoubleComponentPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DoubleComponentPickerViewController.m"; sourceTree = "<group>"; };
+		EFA127291B2896FF000C2B8F /* UIViewController+DependentComponentPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DependentComponentPickerViewController.h"; sourceTree = "<group>"; };
+		EFA1272A1B2896FF000C2B8F /* UIViewController+DependentComponentPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DependentComponentPickerViewController.m"; sourceTree = "<group>"; };
+		EFA1272C1B2899CE000C2B8F /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple.png; sourceTree = "<group>"; };
+		EFA1272D1B2899CE000C2B8F /* doubleicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doubleicon.png; sourceTree = "<group>"; };
+		EFA1272E1B2899CE000C2B8F /* dependenticon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dependenticon.png; sourceTree = "<group>"; };
+		EFA1272F1B2899CE000C2B8F /* toolicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toolicon.png; sourceTree = "<group>"; };
+		EFA127301B2899CE000C2B8F /* singleicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = singleicon.png; sourceTree = "<group>"; };
+		EFA127311B2899CE000C2B8F /* clockicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clockicon.png; sourceTree = "<group>"; };
+		EFA127381B2899DA000C2B8F /* lemon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lemon.png; sourceTree = "<group>"; };
+		EFA127391B2899DA000C2B8F /* cherry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cherry.png; sourceTree = "<group>"; };
+		EFA1273A1B2899DA000C2B8F /* bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bar.png; sourceTree = "<group>"; };
+		EFA1273B1B2899DA000C2B8F /* crown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crown.png; sourceTree = "<group>"; };
+		EFA1273C1B2899DA000C2B8F /* seven.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seven.png; sourceTree = "<group>"; };
+		EFA127421B2899E2000C2B8F /* win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = win.wav; sourceTree = "<group>"; };
+		EFA127431B2899E2000C2B8F /* crunch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = crunch.wav; sourceTree = "<group>"; };
+		EFA127461B28A703000C2B8F /* UIViewController+CustomPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CustomPickerViewController.h"; sourceTree = "<group>"; };
+		EFA127471B28A703000C2B8F /* UIViewController+CustomPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CustomPickerViewController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				EFA126F91B28953C000C2B8F /* Tab Bars and Pickers */,
+				EFA127421B2899E2000C2B8F /* win.wav */,
+				EFA127431B2899E2000C2B8F /* crunch.wav */,
 				EFA127131B28953D000C2B8F /* Tab Bars and PickersTests */,
 				EFA126F81B28953C000C2B8F /* Products */,
 			);
@@ -86,9 +129,30 @@
 				EFA127011B28953C000C2B8F /* ViewController.h */,
 				EFA127021B28953C000C2B8F /* ViewController.m */,
 				EFA127041B28953C000C2B8F /* Main.storyboard */,
+				EFA127201B289670000C2B8F /* UIViewController+DatePickerViewController.h */,
+				EFA127211B289670000C2B8F /* UIViewController+DatePickerViewController.m */,
+				EFA127231B2896A4000C2B8F /* UIViewController+SingleComponentPickerViewController.h */,
+				EFA127241B2896A4000C2B8F /* UIViewController+SingleComponentPickerViewController.m */,
+				EFA127261B2896DA000C2B8F /* UIViewController+DoubleComponentPickerViewController.h */,
+				EFA127271B2896DA000C2B8F /* UIViewController+DoubleComponentPickerViewController.m */,
+				EFA127291B2896FF000C2B8F /* UIViewController+DependentComponentPickerViewController.h */,
+				EFA1272A1B2896FF000C2B8F /* UIViewController+DependentComponentPickerViewController.m */,
+				EFA127461B28A703000C2B8F /* UIViewController+CustomPickerViewController.h */,
+				EFA127471B28A703000C2B8F /* UIViewController+CustomPickerViewController.m */,
 				EFA127071B28953C000C2B8F /* Images.xcassets */,
 				EFA127091B28953C000C2B8F /* LaunchScreen.xib */,
 				EFA126FA1B28953C000C2B8F /* Supporting Files */,
+				EFA1272C1B2899CE000C2B8F /* apple.png */,
+				EFA1272D1B2899CE000C2B8F /* doubleicon.png */,
+				EFA1272E1B2899CE000C2B8F /* dependenticon.png */,
+				EFA1272F1B2899CE000C2B8F /* toolicon.png */,
+				EFA127301B2899CE000C2B8F /* singleicon.png */,
+				EFA127311B2899CE000C2B8F /* clockicon.png */,
+				EFA127381B2899DA000C2B8F /* lemon.png */,
+				EFA127391B2899DA000C2B8F /* cherry.png */,
+				EFA1273A1B2899DA000C2B8F /* bar.png */,
+				EFA1273B1B2899DA000C2B8F /* crown.png */,
+				EFA1273C1B2899DA000C2B8F /* seven.png */,
 			);
 			path = "Tab Bars and Pickers";
 			sourceTree = "<group>";
@@ -199,9 +263,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFA127341B2899CE000C2B8F /* dependenticon.png in Resources */,
 				EFA127061B28953C000C2B8F /* Main.storyboard in Resources */,
+				EFA127331B2899CE000C2B8F /* doubleicon.png in Resources */,
+				EFA127441B2899E2000C2B8F /* win.wav in Resources */,
+				EFA1273F1B2899DA000C2B8F /* bar.png in Resources */,
+				EFA1273E1B2899DA000C2B8F /* cherry.png in Resources */,
+				EFA127351B2899CE000C2B8F /* toolicon.png in Resources */,
+				EFA127361B2899CE000C2B8F /* singleicon.png in Resources */,
+				EFA127411B2899DA000C2B8F /* seven.png in Resources */,
+				EFA127451B2899E2000C2B8F /* crunch.wav in Resources */,
 				EFA1270B1B28953C000C2B8F /* LaunchScreen.xib in Resources */,
+				EFA127321B2899CE000C2B8F /* apple.png in Resources */,
+				EFA1273D1B2899DA000C2B8F /* lemon.png in Resources */,
 				EFA127081B28953C000C2B8F /* Images.xcassets in Resources */,
+				EFA127401B2899DA000C2B8F /* crown.png in Resources */,
+				EFA127371B2899CE000C2B8F /* clockicon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,9 +296,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFA127481B28A703000C2B8F /* UIViewController+CustomPickerViewController.m in Sources */,
+				EFA127281B2896DA000C2B8F /* UIViewController+DoubleComponentPickerViewController.m in Sources */,
+				EFA1272B1B2896FF000C2B8F /* UIViewController+DependentComponentPickerViewController.m in Sources */,
 				EFA127031B28953C000C2B8F /* ViewController.m in Sources */,
+				EFA127221B289670000C2B8F /* UIViewController+DatePickerViewController.m in Sources */,
 				EFA127001B28953C000C2B8F /* AppDelegate.m in Sources */,
 				EFA126FD1B28953C000C2B8F /* main.m in Sources */,
+				EFA127251B2896A4000C2B8F /* UIViewController+SingleComponentPickerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +430,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Tab Bars and Pickers/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -358,6 +441,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Tab Bars and Pickers/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
