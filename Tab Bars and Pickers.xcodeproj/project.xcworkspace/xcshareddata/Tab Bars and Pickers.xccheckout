@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0FC7AACE-3174-470C-B516-46489F31567E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Tab Bars and Pickers</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>58516E0A8BF9F9958298C7FE475AB91F052296F8</key>
+		<string>https://github.com/GenoGarcia/Tab-Bars-and-Pickers.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Tab Bars and Pickers.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>58516E0A8BF9F9958298C7FE475AB91F052296F8</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/GenoGarcia/Tab-Bars-and-Pickers.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>58516E0A8BF9F9958298C7FE475AB91F052296F8</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>58516E0A8BF9F9958298C7FE475AB91F052296F8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Tab%20Bars%20and%20Pickers</string>
+		</dict>
+	</array>
+</dict>
+</plist>
