@@ -24,7 +24,4 @@
         [_datePicker setDate:now animated:NO];
 }
 
-//UIPicker Code in Single Screen.
-
-
 @end
