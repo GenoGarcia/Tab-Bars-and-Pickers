@@ -15,4 +15,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *winLabel;
 @property (weak, nonatomic) IBOutlet UIButton *button;
 
+-(NSInteger) numberOfComponentsInPickerView:(UIPickerView *)pickerView;
+
 @end

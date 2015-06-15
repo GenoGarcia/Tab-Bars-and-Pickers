@@ -14,11 +14,11 @@
 #define kZipComponent 1
 
 -(IBAction)buttonPressed:(id)sender {
-    NSInteger stateRow = [self.dependentPicker selectedRowInComponent:kStateComponent];
-    NSInteger zipRow = [self.dependentPicker selectedRowInComponent:kZipComponent];
+    NSInteger stateRow = [_dependentPicker selectedRowInComponent:kStateComponent];
+    NSInteger zipRow = [_dependentPicker selectedRowInComponent:kZipComponent];
 
-    NSString *state = self.states[stateRow];
-    NSString *zip = self.zips[zipRow];
+    NSString *state = _states[stateRow];
+    NSString *zip = _zips[zipRow];
     NSString *title = [[NSString alloc] initWithFormat: @"You selected zip code %@.", zip];
     NSString *message = [[NSString alloc] initWithFormat: @"%@ is in %@", zip, state];
     UIAlertView *alert = [[UIAlertView alloc]initWithTitle:title message:message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
@@ -26,46 +26,47 @@
 }
 
 -(void)viewDidLoad {
-    [super viewDidLoad];
+    [super ViewDidLoad];
     NSBundle *bundle = [NSBundle mainBundle];
     NSURL *plistURL = [bundle URLForResource:@"stateditionary" withExtension:@"plist"];
-    self.stateZips = [NSDictionary dictionaryWithContentsOfURL:plistURL];
-    NSArray *allStates = [self.stateZips allKeys];
+    _stateZips = [NSDictionary dictionaryWithContentsOfURL:plistURL];
+    NSArray *allStates = [_stateZips allKeys];
     NSArray *sortedStates = [allStates sortedArrayUsingSelector:@selector(compare)];
-    self.states = sortedStates;
-    NSString *selectedState = self.states[0];
-    self.zips = self.stateZips[selectedState];
+    _states = sortedStates;
+    NSString *selectedState = _states[0];
+    _zips = _stateZips[selectedState];
 }
 
 #pragma mark -
 #pragma mark Picker Data Source Methods
--(NSInteger)numberOfComponentsInPickerView:(UIPIckerView *)pickerView {
+-(int)numberOfComponentsInPickerView:UIPIckerView *pickerView 
+{
     return 2;
 }
 
 -(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsIinComponent:(NSInteger)component {
     if (component == kStateComponent) {
-        return [self.states count];
+        return [_states count];
     }else{
-        return [self.zips count];
+        return [_zips count];
     }
 }
 
 #pragma mark Picker Delegate Methods
 -(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
     if (component == kStateComponent) {
-        return self.states[row];
+        return _states[row];
     }else{
-        return self.zips[row];
+        return _zips[row];
     }
 }
 
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
     if (component == kStateComponent) {
-        NSString *selectedState = self.states[row];
-        self.zips = self.stateZips[selectedState];
-        [self.dependentPicker reloadComponent:kZipComponent];
-        [self.dependentPicker selectRow:0 inComponent:kZipComponent animated:YES];
+        NSString *selectedState = _states[row];
+        _zips = _stateZips[selectedState];
+        [_dependentPicker reloadComponent:kZipComponent];
+        [_dependentPicker selectRow:0 inComponent:kZipComponent animated:YES];
     }
 }
 

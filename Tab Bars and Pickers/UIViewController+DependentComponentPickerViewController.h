@@ -10,10 +10,9 @@
 
 @interface DependentComponentPickerViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
 
-@property (strong, nonatomic) NSDictionary *stateZips;
-@property (strong, nonatomic) NSArray *states;
-@property (strong, nonatomic) NSArray *zips;
-
+@property (weak, nonatomic) NSDictionary *stateZips;
+@property (weak, nonatomic) NSArray *states;
+@property (weak, nonatomic) NSArray *zips;
 @property (weak, nonatomic) IBOutlet UIPickerView *dependentPicker;
 
 - (IBAction)buttonPressed:(id)sender;
