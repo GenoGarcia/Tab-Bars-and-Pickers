@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13F1077" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Single-->
+        <!--Single Component Picker View Controller - Single-->
         <scene sceneID="Qez-Js-5EX">
             <objects>
                 <viewController title="Single" id="yYO-Vs-Tkq" customClass="SingleComponentPickerViewController" sceneMemberID="viewController">
@@ -46,7 +46,7 @@
             </objects>
             <point key="canvasLocation" x="1716" y="596"/>
         </scene>
-        <!--Dependent-->
+        <!--Dependent Component Picker View Controller - Dependent-->
         <scene sceneID="TRW-fB-y0h">
             <objects>
                 <viewController title="Dependent" id="fgq-Km-PJV" customClass="DependentComponentPickerViewController" sceneMemberID="viewController">
@@ -55,18 +55,18 @@
                         <viewControllerLayoutGuide type="bottom" id="cC7-im-LGr"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="xxB-lD-5gU">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FBf-oo-bgs">
-                                <rect key="frame" x="0.0" y="20" width="375" height="162"/>
+                                <rect key="frame" x="0.0" y="12" width="375" height="162"/>
                                 <connections>
                                     <outlet property="dataSource" destination="xxB-lD-5gU" id="lzD-QT-14L"/>
                                     <outlet property="delegate" destination="xxB-lD-5gU" id="Cns-Jm-ejV"/>
                                 </connections>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mo0-pt-afu">
-                                <rect key="frame" x="164" y="319" width="43" height="30"/>
+                                <rect key="frame" x="164" y="225" width="43" height="30"/>
                                 <state key="normal" title="Select">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -78,7 +78,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" tag="3" title="Dependent" image="dependenticon.png" id="l3L-KQ-zeZ"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="dependentPicker" destination="FBf-oo-bgs" id="pGv-J1-Muv"/>
                     </connections>
@@ -87,7 +87,7 @@
             </objects>
             <point key="canvasLocation" x="2093.5" y="645.5"/>
         </scene>
-        <!--Custom-->
+        <!--Custom Picker View Controller - Custom-->
         <scene sceneID="WeF-Ae-3vg">
             <objects>
                 <viewController title="Custom" id="k5d-xy-ZHP" customClass="CustomPickerViewController" sceneMemberID="viewController">
@@ -136,7 +136,7 @@
             </objects>
             <point key="canvasLocation" x="2506" y="268"/>
         </scene>
-        <!--Date-->
+        <!--Date Picker View Controller - Date-->
         <scene sceneID="bzo-Ag-fyz">
             <objects>
                 <viewController title="Date" id="y8G-Dw-Bb9" customClass="DatePickerViewController" sceneMemberID="viewController">
@@ -199,13 +199,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Date" image="clockicon.png" selectedImage="clockicon.png" id="wKK-O6-IOo"/>
+                    <tabBarItem key="tabBarItem" title="Date" image="clockicon.png" id="wKK-O6-IOo"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LoT-KK-2a9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1716" y="-24"/>
         </scene>
-        <!--Double-->
+        <!--Double Component Picker View Controller - Double-->
         <scene sceneID="mAc-78-Vgt">
             <objects>
                 <viewController title="Double" id="f3X-Wx-y5f" customClass="DoubleComponentPickerViewController" sceneMemberID="viewController">
@@ -214,11 +214,11 @@
                         <viewControllerLayoutGuide type="bottom" id="aPd-ON-232"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="mn7-nQ-GxZ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b1B-u1-Jws">
-                                <rect key="frame" x="164" y="319" width="43" height="30"/>
+                                <rect key="frame" x="164" y="225" width="43" height="30"/>
                                 <state key="normal" title="Select">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -227,7 +227,7 @@
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Jo-Gn-ost">
-                                <rect key="frame" x="0.0" y="20" width="375" height="162"/>
+                                <rect key="frame" x="0.0" y="12" width="375" height="162"/>
                                 <connections>
                                     <outlet property="dataSource" destination="mn7-nQ-GxZ" id="Ene-ao-RzX"/>
                                     <outlet property="delegate" destination="mn7-nQ-GxZ" id="tpt-mD-8Sm"/>
@@ -237,7 +237,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" tag="2" title="Double" image="doubleicon.png" id="2YI-eM-zaN"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="doublePicker" destination="7Jo-Gn-ost" id="7Iu-Zz-B1d"/>
                     </connections>
@@ -277,4 +277,9 @@
         <image name="singleicon.png" width="25" height="24"/>
         <image name="toolicon.png" width="24" height="24"/>
     </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
 </document>

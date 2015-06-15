@@ -8,13 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CustomPickerViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
-
+@interface CustomPickerViewController : UIViewController 
 @property (strong, nonatomic) NSArray *images;
 @property (weak, nonatomic) IBOutlet UIPickerView *picker;
 @property (weak, nonatomic) IBOutlet UILabel *winLabel;
 @property (weak, nonatomic) IBOutlet UIButton *button;
 
--(NSInteger) numberOfComponentsInPickerView:(UIPickerView *)pickerView;
+-(int) numberOfComponentsInPickerView:(UIPickerView *)pickerView;
+
 
 @end

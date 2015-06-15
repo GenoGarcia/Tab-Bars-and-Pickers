@@ -28,7 +28,8 @@ SystemSoundID crunchSoundID;
     [self performSelector:@selector(showButton) withObject:nil afterDelay:1.5];
 }
 
--(IBAction)spin:(id)sender {
+-(IBAction)spin:(id)sender { 
+	//If not working: the for-loop wasn't closed, so I added a }, possibly in the wrong spot.
     BOOL win = NO;
     int numInRow = 1;
     int lastVal = -1;
@@ -58,23 +59,28 @@ SystemSoundID crunchSoundID;
         }
         self.button.hidden = YES;
         self.winLabel.text = @"";
+	}
 }
                                    
--(void)viewDidLoad {
+-(void)viewDidLoad 
+{
     [super viewDidLoad];
-    self.images = @[[UIImage imageNamed:@"seven"], [UIImage imageNamed:@"bar"], [UIImage imageNamed:@"crown"], [UIImage imageNamed:@"cherry"], [UIImage imageNamed:@"lemon"], [UIImage imageNamed:@"apple"]];
+    _images = @[[UIImage imageNamed:@"seven"], [UIImage imageNamed:@"bar"], [UIImage imageNamed:@"crown"], [UIImage imageNamed:@"cherry"], [UIImage imageNamed:@"lemon"], [UIImage imageNamed:@"apple"]];
     srandom(time(NULL));
 }
                                    
 #pragma mark -
 #pragma mark Picker Data Source Methods
--(NSInteger) numberOfComponentsInPickerView:(UIPickerView *)pickerView {
+-(int) numberOfComponentsInPickerView:(UIPickerView *)pickerView 
+{
         return 5;
-    }
+}
                                    
--(NSInteger)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reuseingView:(UIView *)view {                                       UIImage *image = self.images[row];
+-(id)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reuseingView:(UIView *)view 
+{                                       
+	UIImage *image = self.images[row];
     UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
     return imageView;
-    }
 }
+
 @end
