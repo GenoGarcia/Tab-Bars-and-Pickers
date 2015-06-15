@@ -9,11 +9,11 @@
 #import "UIViewController+CustomPickerViewController.h"
 #import <AudioToolbox/AudioToolbox.h>
 
-@implementation CustomPickerViewController
+@implementation CustomPickerViewController{
 
 SystemSoundID winSoundID;
 SystemSoundID crunchSoundID;
-
+}
 -(void)showButton {
     self.button.hidden = NO;
 }
@@ -21,7 +21,7 @@ SystemSoundID crunchSoundID;
 -(void)playWinSound {
     if (winSoundID == 0) {
         NSURL *soundURL = [[NSBundle mainBundle] URLForResource:@"win" withExtension:@"wav"];
-        AudioServicesCreateSystemSoundID((_bridge CFURLRef)soundURL, &winSoundID);
+        AudioServicesCreateSystemSoundID((__bridge CFURLRef)soundURL, &winSoundID);
     }
     AudioServicesPlaySystemSound(winSoundID);
     self.winLabel.text = @"WINNING!";
@@ -49,7 +49,7 @@ SystemSoundID crunchSoundID;
         if (crunchSoundID == 0) {
             NSString *path = [[NSBundle mainBundle] pathForResource:@"crunch" ofType:@"wav"];
             NSURL *soundURL = [NSURL fileURLWithPath:path];
-            AudioServicesCreateSystemSoundID((_bridge CFURLRef)soundURL, &crunchSoundID);
+            AudioServicesCreateSystemSoundID((__bridge CFURLRef)soundURL, &crunchSoundID);
         }
         AudioServicesPlaySystemSound(crunchSoundID);
         if (win) {

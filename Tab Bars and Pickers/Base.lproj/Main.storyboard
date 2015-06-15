@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13F1077" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <deployment defaultVersion="1552" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
-        <!--Single Component Picker View Controller - Single-->
+        <!--Single-->
         <scene sceneID="Qez-Js-5EX">
             <objects>
                 <viewController title="Single" id="yYO-Vs-Tkq" customClass="SingleComponentPickerViewController" sceneMemberID="viewController">
@@ -46,7 +46,7 @@
             </objects>
             <point key="canvasLocation" x="1716" y="596"/>
         </scene>
-        <!--Dependent Component Picker View Controller - Dependent-->
+        <!--Dependent-->
         <scene sceneID="TRW-fB-y0h">
             <objects>
                 <viewController title="Dependent" id="fgq-Km-PJV" customClass="DependentComponentPickerViewController" sceneMemberID="viewController">
@@ -59,14 +59,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FBf-oo-bgs">
-                                <rect key="frame" x="0.0" y="12" width="375" height="162"/>
+                                <rect key="frame" x="-27" y="20" width="375" height="162"/>
                                 <connections>
                                     <outlet property="dataSource" destination="xxB-lD-5gU" id="lzD-QT-14L"/>
                                     <outlet property="delegate" destination="xxB-lD-5gU" id="Cns-Jm-ejV"/>
                                 </connections>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mo0-pt-afu">
-                                <rect key="frame" x="164" y="225" width="43" height="30"/>
+                                <rect key="frame" x="139" y="225" width="43" height="30"/>
                                 <state key="normal" title="Select">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -87,7 +87,7 @@
             </objects>
             <point key="canvasLocation" x="2093.5" y="645.5"/>
         </scene>
-        <!--Custom Picker View Controller - Custom-->
+        <!--Custom-->
         <scene sceneID="WeF-Ae-3vg">
             <objects>
                 <viewController title="Custom" id="k5d-xy-ZHP" customClass="CustomPickerViewController" sceneMemberID="viewController">
@@ -136,7 +136,7 @@
             </objects>
             <point key="canvasLocation" x="2506" y="268"/>
         </scene>
-        <!--Date Picker View Controller - Date-->
+        <!--Date-->
         <scene sceneID="bzo-Ag-fyz">
             <objects>
                 <viewController title="Date" id="y8G-Dw-Bb9" customClass="DatePickerViewController" sceneMemberID="viewController">
@@ -205,7 +205,7 @@
             </objects>
             <point key="canvasLocation" x="1716" y="-24"/>
         </scene>
-        <!--Double Component Picker View Controller - Double-->
+        <!--Double-->
         <scene sceneID="mAc-78-Vgt">
             <objects>
                 <viewController title="Double" id="f3X-Wx-y5f" customClass="DoubleComponentPickerViewController" sceneMemberID="viewController">
@@ -217,8 +217,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Jo-Gn-ost">
+                                <rect key="frame" x="-33" y="20" width="375" height="162"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="mn7-nQ-GxZ" id="Ene-ao-RzX"/>
+                                    <outlet property="delegate" destination="mn7-nQ-GxZ" id="tpt-mD-8Sm"/>
+                                </connections>
+                            </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b1B-u1-Jws">
-                                <rect key="frame" x="164" y="225" width="43" height="30"/>
+                                <rect key="frame" x="139" y="225" width="43" height="30"/>
                                 <state key="normal" title="Select">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -226,13 +233,6 @@
                                     <action selector="buttonPressed:" destination="f3X-Wx-y5f" eventType="touchUpInside" id="kW3-IM-0Yo"/>
                                 </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Jo-Gn-ost">
-                                <rect key="frame" x="0.0" y="12" width="375" height="162"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="mn7-nQ-GxZ" id="Ene-ao-RzX"/>
-                                    <outlet property="delegate" destination="mn7-nQ-GxZ" id="tpt-mD-8Sm"/>
-                                </connections>
-                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
